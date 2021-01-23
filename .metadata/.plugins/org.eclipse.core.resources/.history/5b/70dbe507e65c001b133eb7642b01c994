@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class HiLo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		// Create a random number for the user to guess
+		int theNumber = (int)(Math.random() * 1000 + 1);
+		System.out.println(theNumber);
+		int guess = 0;
+		System.out.println("Guess a number between 1 and 1000: ");
+		guess = scan.nextInt();
+		System.out.println("You guessed:" + guess + ".");
+		
+	}
+
+}
